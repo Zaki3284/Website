@@ -1,33 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Header from './composent/1-Header/header'
+import Hero from './composent/2-Services/Services'
+import Main from './composent/3-About Us/About Us'
+import About from './composent/3-About Us/About Us'
+import Projects from './composent/4-Projects/Projects'
+import Contact from './composent/5-Contact/Contact'
+import Footer from './composent/Footer/footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className='Container'>
+
+        <Header></Header>
+        <div className='divider'></div>
+        <Hero></Hero>
+        <div className='divider'></div>
+        <Main></Main>
+        <div className='divider'></div>
+        <About></About>
+        <div className='divider'></div>
+        <Projects></Projects>
+        <div className='divider'></div>
+        <Contact></Contact>
+        <div className='divider'></div>
+        <Footer></Footer>
+        </div>  
     </>
   )
 }
